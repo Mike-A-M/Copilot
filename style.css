@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/egor-litvinov-Epjx67LMVqY-unsplash.jpg') no-repeat center center;
+}
+
+.calculator {
+    width: min(100%, 75vw);
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    opacity: 0.75;
+}
+
+.display {
+    background: #222;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 18px;
+    border-radius: 18px;
+    text-align: right;
+    margin-bottom: 18px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.operator-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.clear-row {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.key {
+    padding: 16px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 16px;
+    background: #cfe8ff;
+    color: #1d3f5b;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+    min-height: 56px;
+}
+
+.key.operator {
+    background: #83bffd;
+    color: #ffffff;
+}
+
+.key.equals {
+    background: #83bffd;
+    color: #ffffff;
+}
+
+.key.action {
+    background: #8ec7ff;
+    color: #ffffff;
+}
+
+.key.clear {
+    width: 100%;
+}
+
+.key:active,
+.key:focus-visible {
+    transform: scale(1.5);
+    background-color: #ffcc33;
+    color: #1b1b1b;
+    font-weight: 700;
+}
+
+@media (max-width: 520px) {
+    .calculator {
+        padding: 16px;
+    }
+    .display {
+        font-size: 1.6rem;
+        padding: 14px;
+    }
+    .key {
+        padding: 14px 0;
+        min-height: 50px;
+    }
+}
