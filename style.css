@@ -75,6 +75,7 @@ body {
     cursor: pointer;
     transition: transform 0.1s ease, background-color 0.1s ease;
     min-height: 56px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .key.operator {
