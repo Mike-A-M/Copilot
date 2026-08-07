@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/egor-litvinov-Epjx67LMVqY-unsplash.jpg);
+    background-image: url('egor-litvinov-Epjx67LMVqY-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
